@@ -1,0 +1,54 @@
+'<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }} · Roll‑E</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {{ content_for_header }}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Helvetica+Neue:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Theme overrides + motion -->
+  {{ 'theme-override.css' | asset_url | stylesheet_tag }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  {{ 'motion.js' | asset_url | script_tag }}
+</head>
+<body class="spotlight-bg">
+  {% section 'header' %}
+    <main role="main">{{ content_for_layout }}</main>
+  {% section 'footer' %}
+</body>
+</html>'/* Animated gold border for .watch-listing cards */
+.watch-listing {
+  position: relative;
+  background: #000;
+  color: #FFD700;
+  text-shadow: 0 0 6px rgba(255,215,0,0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow: inset 0 0 0 2px #d4af37;
+}
+.watch-listing::before {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: conic-gradient(#d4af37,#ffd700,#d4af37);
+  opacity: 0;
+  transition: opacity .3s ease;
+  border-radius: 50%;
+  z-index: 0;
+}
+.watch-listing:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700, inset 0 0 0 2px #ffd700;
+}
+.watch-listing:hover::before {
+  opacity: .6;
+  animation: rb 4s linear infinite;
+}
+@keyframes rb {
+  to { transform: rotate(1turn); }
+}

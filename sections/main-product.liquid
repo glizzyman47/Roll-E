@@ -1,0 +1,21 @@
+'<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }} · Roll‑E</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {{ content_for_header }}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Helvetica+Neue:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Theme overrides + motion -->
+  {{ 'theme-override.css' | asset_url | stylesheet_tag }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  {{ 'motion.js' | asset_url | script_tag }}
+</head>
+<body class="spotlight-bg">
+  {% section 'header' %}
+    <main role="main">{{ content_for_layout }}</main>
+  {% section 'footer' %}
+</body>
+</html>'

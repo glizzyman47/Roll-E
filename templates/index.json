@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_list_R8QVah": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3jEGzQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rolex-superclone-collection"
+          }
+        },
+        "featured_collection_ELrFc3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "omega-collection"
+          }
+        },
+        "featured_collection_Kg3Ue4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "breilting-collection"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3jEGzQ",
+        "featured_collection_ELrFc3",
+        "featured_collection_Kg3Ue4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".watch-listing {background: #000; color: #d4af37; padding: 1rem; border: 2px solid #d4af37; border-radius: 8px; transition: 0.3s;}",
+        ".watch-listing:hover {background: #d4af37; color: #000;}",
+        ".watch-listing .title {font-weight: 700; text-align: center; margin-bottom: 0.5rem;}",
+        ".watch-listing .price {color: #ffd700; font-size: 1.2rem; margin: 0.5rem 0;}",
+        ".watch-listing .btn {background: #d4af37; color: #000; padding: 0.5em 1em; border: none; border-radius: 4px; transition: 0.3s; cursor: pointer;}",
+        ".watch-listing .btn:hover {background: #ffd700;}"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-4",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_7iQM9g": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3MiwA6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rolex-superclone-collection"
+          }
+        },
+        "featured_collection_jFYd4E": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "omega-collection"
+          }
+        },
+        "featured_collection_UVQdqa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "breilting-collection"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3MiwA6",
+        "featured_collection_jFYd4E",
+        "featured_collection_UVQdqa"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Swiss Automatic Movement 1:1 Superclone Models",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-4",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_JzQPVE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fVCwnx": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QdEe3f": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jbPP4q": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BFgFp7": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fVCwnx",
+        "column_QdEe3f",
+        "column_jbPP4q",
+        "column_BFgFp7"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".watch-listing {background: #000; color: #d4af37; padding: 1rem; border: 2px solid #d4af37; border-radius: 8px; transition: 0.3s;}",
+        ".watch-listing:hover {background: #d4af37; color: #000;}",
+        ".watch-listing .title {font-weight: 700; text-align: center; margin-bottom: 0.5rem;}",
+        ".watch-listing .price {color: #ffd700; font-size: 1.2rem; margin: 0.5rem 0;}",
+        ".watch-listing .btn {background: #d4af37; color: #000; padding: 0.5em 1em; border: none; border-radius: 4px; transition: 0.3s; cursor: pointer;}",
+        ".watch-listing .btn:hover {background: #ffd700;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "collection_list_R8QVah",
+    "collection_list_7iQM9g",
+    "multicolumn_JzQPVE"
+  ]
+}

@@ -1,0 +1,124 @@
+{% comment %}
+  sections/main-page.liquid
+{% endcomment %}
+
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  /* Your existing padding rules */
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* ▶ Video & Gallery Styles */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-bottom: 2rem;
+  }
+  .image-gallery img {
+    width: 32%;
+    object-fit: cover;
+  }
+{%- endstyle -%}
+
+<section id="MainPage-{{ section.id }}" class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0{% if section.settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {{ page.title | escape }}
+  </h1>
+
+  <div class="rte{% if section.settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
+
+    <!-- ▶ Responsive Vimeo Embed -->
+    <div class="video-container">
+      <iframe
+        src="https://player.vimeo.com/video/474617908?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+        title="Lot 58 – Rolex, Submariner, Ref. 116610LV, s.c. “Hulk”">
+      </iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- ▶ Image Gallery -->
+    <div class="image-gallery">
+      {% assign images = "
+        https://i.ibb.co/4whFFxkH/Sub-Hulk-JPEG1.jpg,
+        https://i.ibb.co/cSbTL4HJ/Sub-Hulk-JPEG2.jpg,
+        https://i.ibb.co/TMgvB2sX/Sub-Hulk-JPEG4.jpg,
+        https://i.ibb.co/Rppq0kXf/Sub-Hulk-JPEG5.jpg,
+        https://i.ibb.co/BKFCGttR/Sub-Hulk-JPEG6.jpg,
+        https://i.ibb.co/4QPMx1N/Sub-Hulk-JPEG7.jpg,
+        https://i.ibb.co/SwkhXT10/Sub-Hulk-JPEG8.jpg,
+        https://i.ibb.co/MyRPThXF/Sub-Hulk-JPEG9.jpg,
+        https://i.ibb.co/1fX5thtt/Sub-Hulk-JPEG10.jpg,
+        https://i.ibb.co/Vrcb738/Sub-Hulk-JPEG11.jpg,
+        https://i.ibb.co/prRxndfbSub-Hulk-JPEG12.jpg
+      " | split: "," %}
+      {% for img_url in images %}
+        <img src="{{ img_url | strip }}" alt="Submariner Hulk {{ forloop.index }}" />
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main page",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Page padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main page",
+      "category": "Page"
+    }
+  ]
+}
+{% endschema %}

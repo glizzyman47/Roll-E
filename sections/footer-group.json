@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_liquid_wmhXb4": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".watch-listing {background: #000; color: #d4af37; padding: 1rem; border: 2px solid #d4af37; border-radius: 8px; transition: 0.3s;}",
+        ".watch-listing:hover {background: #d4af37; color: #000;}",
+        ".watch-listing .title {font-weight: 700; text-align: center; margin-bottom: 0.5rem;}",
+        ".watch-listing .price {color: #ffd700; font-size: 1.2rem; margin: 0.5rem 0;}",
+        ".watch-listing .btn {background: #d4af37; color: #000; padding: 0.5em 1em; border: none; border-radius: 4px; transition: 0.3s; cursor: pointer;}",
+        ".watch-listing .btn:hover {background: #ffd700;}"
+      ],
+      "name": "DC Black TT annimation",
+      "settings": {
+        "custom_liquid": "<div style=\"padding:56.25% 0 0 0;position:relative;\">\n  <iframe\n    src=\"https://player.vimeo.com/video/258759476?autoplay=1&loop=1&muted=1&background=1&badge=0&autopause=0\"\n    frameborder=\"0\"\n    allow=\"autoplay; fullscreen; picture-in-picture\"\n    style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"\n    title=\"Rolex Promotion Video\"\n  ></iframe>\n</div>",
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_xD8awM": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".watch-listing {background: #000; color: #d4af37; padding: 1rem; border: 2px solid #d4af37; border-radius: 8px; transition: 0.3s;}",
+        ".watch-listing:hover {background: #d4af37; color: #000;}",
+        ".watch-listing .title {font-weight: 700; text-align: center; margin-bottom: 0.5rem;}",
+        ".watch-listing .price {color: #ffd700; font-size: 1.2rem; margin: 0.5rem 0;}",
+        ".watch-listing .btn {background: #d4af37; color: #000; padding: 0.5em 1em; border: none; border-radius: 4px; transition: 0.3s; cursor: pointer;}",
+        ".watch-listing .btn:hover {background: #ffd700;}"
+      ],
+      "name": "Submariner Black Date Crown Annimation",
+      "settings": {
+        "custom_liquid": "<div style=\"padding:56.25% 0 0 0;position:relative;\">\n  <iframe\n    src=\"https://player.vimeo.com/video/569577447?badge=0&autopause=0&autoplay=1&loop=1&muted=1&background=1&player_id=0&app_id=58479\"\n    frameborder=\"0\"\n    allow=\"autoplay; fullscreen; picture-in-picture; encrypted-media\"\n    allowfullscreen\n    style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"\n    title=\"ROLEX SUBMARINER\"\n  ></iframe>\n</div>",
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 56,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_wmhXb4",
+    "custom_liquid_xD8awM",
+    "footer"
+  ]
+}

@@ -1,0 +1,59 @@
+{%- comment -%} video-carousel.liquid {%- endcomment -%}
+
+<style>
+  .video-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .video-carousel::-webkit-scrollbar { display: none; }
+
+  .video-carousel .video-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect */
+  }
+  .video-carousel .video-slide iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+</style>
+
+<div class="video-carousel">
+  <div class="video-slide">
+    <iframe
+      src="https://player.vimeo.com/video/1081200832?title=0&byline=0&portrait=0&badge=0&autopause=0&muted=1&background=1"
+      loading="lazy"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="video-slide">
+    <iframe
+      src="https://player.vimeo.com/video/1077464457?badge=0&autopause=0&muted=1&background=1"
+      loading="lazy"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="video-slide">
+    <iframe
+      src="https://player.vimeo.com/video/1078493986?badge=0&autopause=0&muted=1&background=1"
+      loading="lazy"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="video-slide">
+    <iframe
+      src="https://player.vimeo.com/video/1076856781?title=0&byline=0&portrait=0&badge=0&autopause=0&muted=1&background=1"
+      loading="lazy"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
